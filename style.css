@@ -1,0 +1,108 @@
+*:focus {
+  outline: none;
+}
+body{
+  margin:0;
+  padding: 0;
+  width:100%;
+  height:100vh;
+    background : url(./img/mountain.jpg) center no-repeat;
+    background-size: cover;
+    color:white;
+    font-family: cursive;
+}
+#search{
+   height:40px;
+   width:50%;
+   text-align: center; 
+   border:none;
+   font-size: 30px;
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
+}
+.button{
+    margin-left: -1px;
+    height:42px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border:none;
+}
+.icon{
+    height:2rem;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.button:hover{
+background-color: gray;
+}
+.button:active{
+    background-color: rgb(194, 193, 193);
+}
+.container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.error{
+  color: #F00;
+}.err{
+    display: flex;
+    justify-content: center;
+}
+.city{
+    margin-top: 20px;
+    width:70%;
+    height:180px;
+    background:#6b91c0;
+    background-size:cover;
+    border-radius: 20px;
+    display: flex;
+}
+.left{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    font-size: 24px;
+}
+.temp{
+    margin-top:20px;
+    font-size: 60px;
+}
+.right{
+    margin-left:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.name{
+    margin-top:10px;
+}
+.ico{
+    height:200px;
+}
+.weather_icon{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main{
+    min-height:50vh;
+    max-height: fit-content;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
