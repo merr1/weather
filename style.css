@@ -6,7 +6,7 @@ body{
   padding: 0;
   width:100%;
   height:100vh;
-    background : url(./img/mountain.jpg) center no-repeat;
+    background : url(./img/backgr.jpg) center ;
     background-size: cover;
     color:white;
     font-family: cursive;
@@ -19,6 +19,16 @@ body{
    font-size: 30px;
    border-top-left-radius: 25px;
    border-bottom-left-radius: 25px;
+   background:rgba(0,0,0,0.5) ;
+   color:white;
+}
+#search::-webkit-input-placeholder{
+    color: white;
+    opacity: 1;
+}
+#search::-moz-placeholder{
+    color:white;
+    opacity: 1;
 }
 .button{
     margin-left: -1px;
@@ -28,7 +38,7 @@ body{
     border:none;
 }
 .icon{
-    height:2rem;
+    height:36px;
 }
 .search{
     display: flex;
@@ -53,48 +63,66 @@ background-color: gray;
     display: flex;
     justify-content: center;
 }
+.ico{
+    width:70px;
+}
+
 .city{
     margin-top: 20px;
-    width:70%;
+    width:65%;
     height:180px;
-    background:#6b91c0;
+    background:rgba(0,0,0,0.5) ;
     background-size:cover;
     border-radius: 20px;
     display: flex;
+    flex-direction:column ;
 }
-.left{
-    padding-left: 20px;
+.title{
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255,0.7);
+    color:black;
+    height:30px;
+    width:90%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.information{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.humadity,
+.min,
+.max{
+    font-size: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.description{
-    font-size: 24px;
+    text-align:center;
 }
 .temp{
-    margin-top:20px;
     font-size: 60px;
 }
-.right{
-    margin-left:40px;
+.description{
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    height:30px;
+    font-size: 25px;
+}
+.max_min{
+    display: flex;
+    justify-content: space-around;
+     flex-direction: column;
+}
+.right,
+.left{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-.name{
-    margin-top:10px;
-}
-.ico{
-    height:200px;
-}
-.weather_icon{
-    width:100%;
-    height:100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-around;
 }
 .main{
     min-height:50vh;
